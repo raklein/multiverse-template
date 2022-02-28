@@ -15,7 +15,7 @@ library("haven") # read spss files
 # Load sample data
 # set use.value.labels to TRUE to see value labels
 # reading in the ML1 dataset to experiment with
-dat <- read_sav("Full_Dataset_De-Identified.sav")
+dat <- read_sav("data/Full_Dataset_De-Identified.sav")
 
 # Let's use 'flag priming increases conservatism' as an example
 
@@ -80,6 +80,7 @@ inside(M, df <- df %>%
 )
 
 #### df_a6_outcome_scoring: Varying how the outcome variable(s) was/were computed. ####
+#TODO: I'M NOT SURE IF THIS PART IS WORKING PROPERLY
 inside(M, df <- df %>%
          mutate(flagdv = branch(dv_calculation,
                                 "dv_calc_1" ~ (flagdv1 + flagdv2 + flagdv3)/3,
