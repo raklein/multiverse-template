@@ -1,5 +1,7 @@
 # multiverse-template
 
+Edit: This repo not being used currently. 
+
 We're building an analysis template that implements 15 researcher degrees of
 freedom on an example dataset. The ultimate goal is to develop a template that can be easily modified
 and re-used to implement semi-standard sets of multiverse analyses across many
